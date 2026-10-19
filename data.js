@@ -101,7 +101,7 @@ window.BRUCKNER_DATA = {
       "originalTitle": "Allegro moderato",
       "subtitle": "2/2拍 · C小调 · 奏鸣曲式 · 2+3布鲁克纳节奏与死亡时钟",
       "tonalCenter": "C minor (C小调)",
-      "duration": 1010,
+      "duration": 992,
       "form": "扩大奏鸣曲式（三主题群、深度复调展开部与下行死亡时钟尾声）",
       "form_en": "Expanded Sonata Form (Three thematic complexes, contrapuntal development, and Todesuhr coda)",
       "mission": "第一遍先抓三处心跳：开头的2+3点名、中间展开部全铜管的雷霆巨浪，以及最后像挂钟走停一样的死亡时钟。",
@@ -590,7 +590,8 @@ window.BRUCKNER_DATA = {
             "harps": 0.0
           }
         }
-      ]
+      ],
+      "audio": "assets/movement-1.mp3"
     },
     {
       "id": 2,
@@ -602,7 +603,7 @@ window.BRUCKNER_DATA = {
       "originalTitle": "Scherzo: Allegro moderato - Trio: Langsam",
       "subtitle": "3/4拍 & 2/4拍 · C小调 / 降A大调 · 复三部曲式 · 竖琴与瓦格纳大号的首度登场",
       "tonalCenter": "C minor / A-flat major",
-      "duration": 870,
+      "duration": 932,
       "form": "大型复三部曲式（谐谑曲 - 抒情三声中部 - 谐谑曲完整再现）",
       "form_en": "Grand Compound Ternary Form (Scherzo - Pastoral Trio - Scherzo Da Capo)",
       "mission": "听两个极端反差：谐谑曲中厚重踩地的乡村巨汉，与三声中部中竖琴和大号营造出的天界微风。",
@@ -870,7 +871,8 @@ window.BRUCKNER_DATA = {
             "harps": 0.0
           }
         }
-      ]
+      ],
+      "audio": "assets/movement-2.mp3"
     },
     {
       "id": 3,
@@ -882,7 +884,7 @@ window.BRUCKNER_DATA = {
       "originalTitle": "Adagio: Feierlich langsam, doch nicht schleppend",
       "subtitle": "4/4拍 · 降D大调 · 五部双主题变奏交替体 · 钹与三把竖琴的银河顶点",
       "tonalCenter": "D-flat major (降D大调)",
-      "duration": 1605,
+      "duration": 1696,
       "form": "宏伟五部双主题交替变奏体（A1 - B1 - A2 - B2 - A3巨型梯级高潮 - 升华尾声）",
       "form_en": "Grand Five-Part Alternating Variation Form (A1 - B1 - A2 - B2 - A3 Climax - Transfigured Coda)",
       "mission": "静心沉浸在降D大调的永恒光辉中：追踪弦乐切分叹息、瓦格纳大号庄严圣咏，以及哈斯版高潮处三记钹鸣与竖琴掀起的宇宙巨浪！",
@@ -1320,7 +1322,8 @@ window.BRUCKNER_DATA = {
             "harps": 0.0
           }
         }
-      ]
+      ],
+      "audio": "assets/movement-3.mp3"
     },
     {
       "id": 4,
@@ -1332,7 +1335,7 @@ window.BRUCKNER_DATA = {
       "originalTitle": "Finale: Feierlich, nicht schnell",
       "subtitle": "2/2拍 · C小调 / C大调 · 史诗奏鸣曲式 · 西方音乐史上最伟大的四重对位尾声",
       "tonalCenter": "C minor leading to blazing C major",
-      "duration": 1535,
+      "duration": 1321,
       "form": "史诗宏观奏鸣曲式（三主题复合群、复调赋格展开部与四重对位终局尾声）",
       "form_en": "Epic Macro-Sonata Form (Three thematic complexes, fugal development, and quadruple counterpoint Coda)",
       "mission": "全程锁定三大主题并在终局见证奇迹：骑兵冲锋、管风琴圣咏与英雄行进，并在最后三分钟听出四个乐章主题在不同乐器里同时开火的四重对位！",
@@ -1882,7 +1885,8 @@ window.BRUCKNER_DATA = {
             "harps": 0.0
           }
         }
-      ]
+      ],
+      "audio": "assets/movement-4.mp3"
     }
   ],
   "threads": [

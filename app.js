@@ -279,12 +279,19 @@
   // Switch Movement
   function switchMovement(idx) {
     if (idx < 0 || idx >= DATA.movements.length) return;
+    const wasPlaying = state.isPlaying;
     state.movementIndex = idx;
     state.currentTime = 0;
     state.activeStageIndex = 0;
     saveState();
 
     const mvt = getCurMvt();
+    if (mvt.audio) {
+      audioEl.src = mvt.audio;
+      isSimulated = false;
+      audioEl.load();
+    }
+
     if (el.consoleMovement) {
       el.consoleMovement.textContent = `${mvt.roman}. ${tr(mvt, 'title')}`;
     }
@@ -302,6 +309,10 @@
     renderContent();
     drawWaveform();
     updateActiveStage();
+
+    if (wasPlaying) {
+      play();
+    }
   }
 
   // Render Quick Jumps in Timeline
@@ -863,6 +874,23 @@
     if (el.btnSettings) el.btnSettings.addEventListener('click', showSettingsDialog);
     if (el.btnSources) el.btnSources.addEventListener('click', showSourcesDialog);
     if (el.dialogClose) el.dialogClose.addEventListener('click', closeDialog);
+
+    audioEl.addEventListener('timeupdate', () => {
+      if (!isSimulated && Number.isFinite(audioEl.currentTime)) {
+        state.currentTime = audioEl.currentTime;
+        updateActiveStage();
+        drawWaveform();
+      }
+    });
+
+    audioEl.addEventListener('ended', () => {
+      if (state.continuous && state.movementIndex < DATA.movements.length - 1) {
+        switchMovement(state.movementIndex + 1);
+        play();
+      } else {
+        pause();
+      }
+    });
 
     window.addEventListener('resize', drawWaveform);
   }
