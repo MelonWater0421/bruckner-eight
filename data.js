@@ -101,7 +101,7 @@ window.BRUCKNER_DATA = {
       "originalTitle": "Allegro moderato",
       "subtitle": "2/2拍 · C小调 · 奏鸣曲式 · 2+3布鲁克纳节奏与死亡时钟",
       "tonalCenter": "C minor (C小调)",
-      "duration": 992,
+      "duration": 1004,
       "form": "扩大奏鸣曲式（三主题群、深度复调展开部与下行死亡时钟尾声）",
       "form_en": "Expanded Sonata Form (Three thematic complexes, contrapuntal development, and Todesuhr coda)",
       "mission": "第一遍先抓三处心跳：开头的2+3点名、中间展开部全铜管的雷霆巨浪，以及最后像挂钟走停一样的死亡时钟。",
@@ -229,14 +229,14 @@ window.BRUCKNER_DATA = {
               "label_en": "00:00 Primordial Tremolo"
             },
             {
-              "sec": 5.0,
-              "label": "00:05 低弦2+3断奏",
-              "label_en": "00:05 2+3 Low Strings Entrance"
+              "sec": 2.0,
+              "label": "00:02 低弦2+3断奏",
+              "label_en": "00:02 2+3 Bruckner Rhythm in Cellos"
             },
             {
-              "sec": 24.0,
-              "label": "00:24 木管轻柔应答",
-              "label_en": "00:24 Woodwinds Response"
+              "sec": 23.0,
+              "label": "00:23 木管轻柔应答",
+              "label_en": "00:23 Gentle Woodwind Answers"
             }
           ],
           "insights": [
@@ -263,7 +263,7 @@ window.BRUCKNER_DATA = {
         },
         {
           "id": "m1-s02",
-          "start": 42,
+          "start": 40,
           "act": 1,
           "actName": "呈示部：第一主题群",
           "actName_en": "Exposition: Theme 1 Group",
@@ -322,20 +322,20 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 42.0,
-              "label": "00:42 梯级爬升启动",
-              "label_en": "00:42 Steigerung Begins"
+              "sec": 40.0,
+              "label": "00:40 梯级爬升启动",
+              "label_en": "00:40 Steigerung Ascent Commences"
             },
             {
-              "sec": 68.0,
-              "label": "01:08 铜管狂暴全奏咆哮",
-              "label_en": "01:08 Brass Fortissimo Blast"
+              "sec": 73.0,
+              "label": "01:13 铜管狂暴全奏咆哮",
+              "label_en": "01:13 fff Brass Outburst [Bar 23]"
             }
           ]
         },
         {
           "id": "m1-s03",
-          "start": 98,
+          "start": 82,
           "act": 1,
           "actName": "呈示部：第一主题群",
           "actName_en": "Exposition: Theme 1 Group",
@@ -393,20 +393,20 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 98.0,
-              "label": "01:38 暴风退潮",
-              "label_en": "01:38 Storm Subsiding"
+              "sec": 82.0,
+              "label": "01:22 暴风退潮与调性沉降",
+              "label_en": "01:22 Storm Calms to G Major"
             },
             {
-              "sec": 120.0,
-              "label": "02:00 换调过门桥梁",
-              "label_en": "02:00 Modulatory Bridge"
+              "sec": 108.0,
+              "label": "01:48 换调过门桥梁",
+              "label_en": "01:48 Harmonic Bridge"
             }
           ]
         },
         {
           "id": "m1-s04",
-          "start": 138,
+          "start": 118,
           "act": 2,
           "actName": "呈示部：歌唱期 (Gesangsperiode)",
           "actName_en": "Exposition: Gesangsperiode",
@@ -464,19 +464,19 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 138.0,
-              "label": "02:18 小提琴歌唱期起跑",
-              "label_en": "02:18 Cantilena Theme Enters"
+              "sec": 118.0,
+              "label": "01:58 小提琴歌唱期起跑",
+              "label_en": "01:58 Gesangsperiode Soars in Violins [Bar 51]"
             },
             {
-              "sec": 165.0,
-              "label": "02:45 大提琴向上盘旋对话",
-              "label_en": "02:45 Cellos Soaring Response"
+              "sec": 145.0,
+              "label": "02:25 大提琴向上盘旋对话",
+              "label_en": "02:25 Counter-Melody in Cellos"
             },
             {
-              "sec": 188.0,
-              "label": "03:08 木管加入增色",
-              "label_en": "03:08 Woodwinds Coloring"
+              "sec": 175.0,
+              "label": "02:55 木管加入增色",
+              "label_en": "02:55 Woodwinds Enrich the Polyphony"
             }
           ],
           "insights": [
@@ -503,7 +503,7 @@ window.BRUCKNER_DATA = {
         },
         {
           "id": "m1-s05",
-          "start": 202,
+          "start": 195,
           "act": 2,
           "actName": "呈示部：歌唱期 (Gesangsperiode)",
           "actName_en": "Exposition: Gesangsperiode",
@@ -561,20 +561,25 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 202.0,
-              "label": "03:22 抒情高潮攀登",
-              "label_en": "03:22 Lyrical Apex Ascent"
+              "sec": 195.0,
+              "label": "03:15 抒情高潮攀登",
+              "label_en": "03:15 Lyrical Climax Surge"
             },
             {
-              "sec": 228.0,
-              "label": "03:48 长笛高音晨星点缀",
-              "label_en": "03:48 Solo Flute Shimmer"
+              "sec": 210.0,
+              "label": "03:30 歌唱期fff巅峰爆发",
+              "label_en": "03:30 fff Peak of Theme 2 [Bar 73]"
+            },
+            {
+              "sec": 226.0,
+              "label": "03:46 长笛高音晨星点缀",
+              "label_en": "03:46 Flute Morning Star Descent"
             }
           ]
         },
         {
           "id": "m1-s06",
-          "start": 248,
+          "start": 237,
           "act": 3,
           "actName": "呈示部：第三主题群（行进与圣咏）",
           "actName_en": "Exposition: Theme 3 Group (March & Chorale)",
@@ -632,20 +637,25 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 248.0,
-              "label": "04:08 英雄行进曲启程",
-              "label_en": "04:08 Heroic March Begins"
+              "sec": 237.0,
+              "label": "03:57 英雄行进曲启程",
+              "label_en": "03:57 Theme 3 Unison March [Bar 97]"
             },
             {
-              "sec": 280.0,
-              "label": "04:40 铜管圣咏齐鸣",
-              "label_en": "04:40 Brass Chorale Enters"
+              "sec": 275.0,
+              "label": "04:35 强音推进",
+              "label_en": "04:35 Dynamic Surge"
+            },
+            {
+              "sec": 293.0,
+              "label": "04:53 铜管圣咏齐鸣",
+              "label_en": "04:53 Brass Chorale Summit [Bar 115]"
             }
           ]
         },
         {
           "id": "m1-s07",
-          "start": 305,
+          "start": 303,
           "act": 3,
           "actName": "呈示部：第三主题群（行进与圣咏）",
           "actName_en": "Exposition: Theme 3 Group",
@@ -703,20 +713,20 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 305.0,
-              "label": "05:05 呈示部弱奏收束",
-              "label_en": "05:05 Exposition Closing"
+              "sec": 303.0,
+              "label": "05:03 呈示部弱奏收束",
+              "label_en": "05:03 Exposition Quiet Cadence [Bar 139]"
             },
             {
               "sec": 335.0,
               "label": "05:35 神秘总休止悬疑",
-              "label_en": "05:35 Mystical Generalpause"
+              "label_en": "05:35 Mysterious Generalpause"
             }
           ]
         },
         {
           "id": "m1-s08",
-          "start": 358,
+          "start": 355,
           "act": 4,
           "actName": "展开部：复调解剖与梯级攀登",
           "actName_en": "Development: Contrapuntal Dissection",
@@ -774,20 +784,20 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 358.0,
-              "label": "05:58 展开部正式展开",
-              "label_en": "05:58 Development Begins"
+              "sec": 355.0,
+              "label": "05:55 展开部正式展开",
+              "label_en": "05:55 Development Commences: Inverted Theme 1 [Bar 153]"
             },
             {
               "sec": 390.0,
               "label": "06:30 木管对位卡农追逐",
-              "label_en": "06:30 Woodwinds Canonic Chase"
+              "label_en": "06:30 Woodwind Canonic Chases"
             }
           ]
         },
         {
           "id": "m1-s09",
-          "start": 418,
+          "start": 420,
           "act": 4,
           "actName": "展开部：复调解剖与梯级攀登",
           "actName_en": "Development: Contrapuntal Dissection",
@@ -845,20 +855,20 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 418.0,
-              "label": "06:58 悲怆歌唱期变奏",
-              "label_en": "06:58 Tragic Cantilena Variant"
+              "sec": 420.0,
+              "label": "07:00 悲怆歌唱期变奏",
+              "label_en": "07:00 Somber Transformation of Theme 2 [Bar 181]"
             },
             {
-              "sec": 450.0,
-              "label": "07:30 半音阶深渊下坠",
-              "label_en": "07:30 Chromatic Descent"
+              "sec": 455.0,
+              "label": "07:35 半音阶深渊下坠",
+              "label_en": "07:35 Chromatic Descent into Abyss"
             }
           ]
         },
         {
           "id": "m1-s10",
-          "start": 482,
+          "start": 485,
           "act": 4,
           "actName": "展开部：复调解剖与梯级攀登",
           "actName_en": "Development: Contrapuntal Dissection",
@@ -917,20 +927,20 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 482.0,
-              "label": "08:02 宏大梯级累积启程",
-              "label_en": "08:02 Titanic Steigerung Launches"
+              "sec": 485.0,
+              "label": "08:05 宏大梯级累积启程",
+              "label_en": "08:05 Colossal Steigerung Begins [Bar 201]"
             },
             {
               "sec": 525.0,
               "label": "08:45 全乐团张力逼近临界",
-              "label_en": "08:45 Tension Nearing Breaking Point"
+              "label_en": "08:45 Tension Nears Boiling Point"
             }
           ]
         },
         {
           "id": "m1-s11",
-          "start": 570,
+          "start": 550,
           "act": 5,
           "actName": "灾变顶点：展开部之死",
           "actName_en": "Cataclysmic Apex: Death of Development",
@@ -989,14 +999,14 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 570.0,
-              "label": "09:30 灭顶之灾：全奏ffff大爆发",
-              "label_en": "09:30 Cataclysmic fff Detonation"
+              "sec": 553.0,
+              "label": "09:13 展开部ffff巅峰大爆发",
+              "label_en": "09:13 ffff Development Detonation [Bar 225]"
             },
             {
-              "sec": 605.0,
-              "label": "10:05 废墟瓦解与残存回声",
-              "label_en": "10:05 Collapse into the Ruins"
+              "sec": 585.0,
+              "label": "09:45 废墟瓦解与残存回声",
+              "label_en": "09:45 Decaying Ruins & Reverb"
             }
           ],
           "insights": [
@@ -1022,7 +1032,7 @@ window.BRUCKNER_DATA = {
         },
         {
           "id": "m1-s12",
-          "start": 628,
+          "start": 615,
           "act": 6,
           "actName": "再现部：废墟与回光",
           "actName_en": "Recapitulation: Ruins & Twilight",
@@ -1080,20 +1090,25 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 628.0,
-              "label": "10:28 废墟中的再现部",
-              "label_en": "10:28 Recapitulation in Ruins"
+              "sec": 615.0,
+              "label": "10:15 再现前夕震颤",
+              "label_en": "10:15 Tremor Before Recapitulation"
             },
             {
-              "sec": 660.0,
-              "label": "11:00 长号空洞悲鸣",
-              "label_en": "11:00 Hollow Trombone Calls"
+              "sec": 624.0,
+              "label": "10:24 第一主题再现部ffff雷霆咆哮",
+              "label_en": "10:24 Recapitulation: Thunderous Return of Theme 1 [Bar 259]"
+            },
+            {
+              "sec": 650.0,
+              "label": "10:50 暴风骤息",
+              "label_en": "10:50 Storm Recedes"
             }
           ]
         },
         {
           "id": "m1-s13",
-          "start": 692,
+          "start": 660,
           "act": 6,
           "actName": "再现部：废墟与回光",
           "actName_en": "Recapitulation: Ruins & Twilight",
@@ -1151,20 +1166,20 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 692.0,
-              "label": "11:32 C大调歌唱期温暖回归",
-              "label_en": "11:32 Cantilena Returns in C Major"
+              "sec": 660.0,
+              "label": "11:00 C大调歌唱期温暖回归",
+              "label_en": "11:00 Luminous Recapitulation of Gesangsperiode [Bar 283]"
             },
             {
-              "sec": 730.0,
-              "label": "12:10 弦乐长卷安详舒展",
-              "label_en": "12:10 Strings Serene Cantabile"
+              "sec": 710.0,
+              "label": "11:50 弦乐长卷安详舒展",
+              "label_en": "11:50 Expansive String Polyphony"
             }
           ]
         },
         {
           "id": "m1-s14",
-          "start": 765,
+          "start": 755,
           "act": 6,
           "actName": "再现部：废墟与回光",
           "actName_en": "Recapitulation: Ruins & Twilight",
@@ -1222,20 +1237,25 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 765.0,
-              "label": "12:45 垂死挣扎冲刺",
-              "label_en": "12:45 Final Desperate Charge"
+              "sec": 758.0,
+              "label": "12:38 英雄进行曲再现",
+              "label_en": "12:38 Theme 3 Recap March [Bar 341]"
             },
             {
-              "sec": 810.0,
-              "label": "13:30 力量耗尽断崖坠落",
-              "label_en": "13:30 Power Drains into Void"
+              "sec": 830.0,
+              "label": "13:50 终极冲刺累积",
+              "label_en": "13:50 Terminal Steigerung Build-Up"
+            },
+            {
+              "sec": 879.0,
+              "label": "14:39 乐章最高潮：三重强音小号命运宣告！",
+              "label_en": "14:39 Grand Climax: Triple-Forte Trumpet Proclamation [Bar 393]"
             }
           ]
         },
         {
           "id": "m1-s15",
-          "start": 845,
+          "start": 908,
           "act": 7,
           "actName": "尾声：死亡时钟的滴答",
           "actName_en": "Coda: The Death Clock",
@@ -1293,20 +1313,20 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 845.0,
-              "label": "14:05 尾声残破独白",
-              "label_en": "14:05 Coda Fragmented Soliloquy"
+              "sec": 910.0,
+              "label": "15:10 断崖坠落与残破独白",
+              "label_en": "15:10 Sudden Collapse & Shattered Echoes [Bar 407]"
             },
             {
-              "sec": 890.0,
-              "label": "14:50 孤寂长笛叹息",
-              "label_en": "14:50 Frail Flute Sigh"
+              "sec": 925.0,
+              "label": "15:25 孤寂木管叹息",
+              "label_en": "15:25 Lonely Woodwind Sigh"
             }
           ]
         },
         {
           "id": "m1-s16",
-          "start": 930,
+          "start": 935,
           "act": 7,
           "actName": "尾声：死亡时钟的滴答",
           "actName_en": "Coda: The Death Clock",
@@ -1364,19 +1384,19 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 930.0,
-              "label": "15:30 死亡时钟启动滴答",
-              "label_en": "15:30 Death Clock Ticking Starts"
+              "sec": 935.0,
+              "label": "15:35 死亡时钟启动滴答",
+              "label_en": "15:35 Totenuhr: Death Clock Commences [Bar 419]"
             },
             {
-              "sec": 965.0,
-              "label": "16:05 弦乐最后下行拨弦",
-              "label_en": "16:05 Final Descending Pizzicatos"
+              "sec": 975.0,
+              "label": "16:15 弦乐最后下行微弱拨弦",
+              "label_en": "16:15 Fading Pizzicato Sighs"
             },
             {
-              "sec": 985.0,
-              "label": "16:25 完全沉入死寂",
-              "label_en": "16:25 Complete Silence"
+              "sec": 1000.0,
+              "label": "16:40 完全沉入永恒死寂",
+              "label_en": "16:40 Complete Silence"
             }
           ],
           "insights": [
@@ -2601,7 +2621,7 @@ window.BRUCKNER_DATA = {
       "originalTitle": "Scherzo: Allegro moderato - Trio: Langsam",
       "subtitle": "3/4拍 & 2/4拍 · C小调 / 降A大调 · 复三部曲式 · 竖琴与瓦格纳大号的首度登场",
       "tonalCenter": "C minor / A-flat major",
-      "duration": 932,
+      "duration": 935,
       "form": "大型复三部曲式（谐谑曲 - 抒情三声中部 - 谐谑曲完整再现）",
       "form_en": "Grand Compound Ternary Form (Scherzo - Pastoral Trio - Scherzo Da Capo)",
       "mission": "听两个极端反差：谐谑曲中厚重踩地的乡村巨汉，与三声中部中竖琴和大号营造出的天界微风。",
@@ -2712,12 +2732,12 @@ window.BRUCKNER_DATA = {
             {
               "sec": 0.0,
               "label": "00:00 乡村重踏启动",
-              "label_en": "00:00 Peasant Stomp Launches"
+              "label_en": "00:00 Rustic Peasant Stomp Begins [Bar 1]"
             },
             {
               "sec": 18.0,
               "label": "00:18 弦乐三连音涡流攀登",
-              "label_en": "00:18 Violin Triplets Ascent"
+              "label_en": "00:18 Swirling String Triplets"
             }
           ],
           "insights": [
@@ -2744,7 +2764,7 @@ window.BRUCKNER_DATA = {
         },
         {
           "id": "m2-s02",
-          "start": 40,
+          "start": 45,
           "act": 1,
           "actName": "谐谑曲：德意志米歇尔踏足",
           "actName_en": "Scherzo: Der deutsche Michel",
@@ -2802,20 +2822,20 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 40.0,
-              "label": "00:40 木管欢谑跳跃",
-              "label_en": "00:40 Woodwinds Whimsical Jests"
+              "sec": 45.0,
+              "label": "00:45 木管欢谑跳跃",
+              "label_en": "00:45 Playful Woodwind Dialogues [Bar 33]"
             },
             {
-              "sec": 62.0,
-              "label": "01:02 弦乐拨弦加持",
-              "label_en": "01:02 Pizzicato Support"
+              "sec": 68.0,
+              "label": "01:08 弦乐拨弦加持",
+              "label_en": "01:08 Accompanying Pizzicatos"
             }
           ]
         },
         {
           "id": "m2-s03",
-          "start": 82,
+          "start": 78,
           "act": 1,
           "actName": "谐谑曲：德意志米歇尔踏足",
           "actName_en": "Scherzo: Der deutsche Michel",
@@ -2873,14 +2893,14 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 82.0,
-              "label": "01:22 铜管风暴大爆发",
-              "label_en": "01:22 Brass Tempest Detonation"
+              "sec": 88.0,
+              "label": "01:28 铜管风暴大爆发",
+              "label_en": "01:28 Detonation of Brass Hurricane [Bar 65]"
             },
             {
               "sec": 115.0,
-              "label": "01:55 全奏顶峰断崖骤停",
-              "label_en": "01:55 Abrupt Full Pause"
+              "label": "01:55 骤停与转折",
+              "label_en": "01:55 Sudden Halt & Harmonic Turn"
             }
           ]
         },
@@ -2946,18 +2966,28 @@ window.BRUCKNER_DATA = {
             {
               "sec": 135.0,
               "label": "02:15 踏步顽强重整",
-              "label_en": "02:15 Stomp Regroups"
+              "label_en": "02:15 Development of Michel's Dance [Bar 100]"
             },
             {
-              "sec": 178.0,
-              "label": "02:58 谐谑曲主部辉煌收束",
-              "label_en": "02:58 Scherzo Main Section Close"
+              "sec": 225.0,
+              "label": "03:45 发展部强音重击",
+              "label_en": "03:45 Development Heavy Accents"
+            },
+            {
+              "sec": 315.0,
+              "label": "05:15 谐谑曲第一部辉煌收束",
+              "label_en": "05:15 First Scherzo Section Triumphant Cadence [Bar 148]"
+            },
+            {
+              "sec": 325.0,
+              "label": "05:25 悬崖勒马大休止",
+              "label_en": "05:25 Grand Generalpause Before Trio"
             }
           ]
         },
         {
           "id": "m2-s05",
-          "start": 210,
+          "start": 330,
           "act": 2,
           "actName": "三声中部：阿尔卑斯黄昏与竖琴破晓",
           "actName_en": "Trio: Alpine Twilight & Sacred Harps",
@@ -3015,20 +3045,20 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 210.0,
-              "label": "03:30 速度放慢，降A大调降临",
-              "label_en": "03:30 Tempo Slows into A-flat Major"
+              "sec": 330.0,
+              "label": "05:30 速度放慢，降A大调降临",
+              "label_en": "05:30 Tempo Relaxes: Trio in A-flat Major [Langsam]"
             },
             {
-              "sec": 240.0,
-              "label": "04:00 弦乐静谧呼吸",
-              "label_en": "04:00 Strings Quiet Breathing"
+              "sec": 360.0,
+              "label": "06:00 弦乐静谧呼吸",
+              "label_en": "06:00 Serene String Breathing"
             }
           ]
         },
         {
           "id": "m2-s06",
-          "start": 268,
+          "start": 400,
           "act": 2,
           "actName": "三声中部：阿尔卑斯黄昏与竖琴破晓",
           "actName_en": "Trio: Alpine Twilight & Sacred Harps",
@@ -3086,19 +3116,19 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 268.0,
-              "label": "04:28 三把竖琴水银泻地登场",
-              "label_en": "04:28 Triple Harps Make Debut"
+              "sec": 402.0,
+              "label": "06:42 三把竖琴水银泻地与瓦格纳大号圣咏",
+              "label_en": "06:42 Three Harps Cascade with Wagner Tuba Chorale"
             },
             {
-              "sec": 300.0,
-              "label": "05:00 瓦格纳大号神圣圣咏",
-              "label_en": "05:00 Wagner Tubas Holy Chorale"
+              "sec": 465.0,
+              "label": "07:45 柔板抒情舒展",
+              "label_en": "07:45 Expansive Lyrical Cantabile"
             },
             {
-              "sec": 335.0,
-              "label": "05:35 独奏长笛如暮鸟啼鸣",
-              "label_en": "05:35 Solo Flute Twilight Bird"
+              "sec": 541.0,
+              "label": "09:01 三声中部金色顶点",
+              "label_en": "09:01 Golden Summit of the Trio"
             }
           ],
           "insights": [
@@ -3125,7 +3155,7 @@ window.BRUCKNER_DATA = {
         },
         {
           "id": "m2-s07",
-          "start": 360,
+          "start": 565,
           "act": 2,
           "actName": "三声中部：阿尔卑斯黄昏与竖琴破晓",
           "actName_en": "Trio: Alpine Twilight & Sacred Harps",
@@ -3183,20 +3213,20 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 360.0,
-              "label": "06:00 远山圆号余音",
-              "label_en": "06:00 Mountain Horn Echoes"
+              "sec": 565.0,
+              "label": "09:25 远山圆号余音",
+              "label_en": "09:25 Distant Alpine Horn Echoes"
             },
             {
-              "sec": 410.0,
-              "label": "06:50 梦境完全消逝",
-              "label_en": "06:50 Dream Melts Away"
+              "sec": 605.0,
+              "label": "10:05 梦境完全消逝，屏息静默",
+              "label_en": "10:05 Dream Fades into Stillness Before Return"
             }
           ]
         },
         {
           "id": "m2-s08",
-          "start": 445,
+          "start": 622,
           "act": 3,
           "actName": "谐谑曲重现 (Scherzo da Capo)",
           "actName_en": "Scherzo da Capo",
@@ -3254,19 +3284,24 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 445.0,
-              "label": "07:25 谐谑曲重现爆发",
-              "label_en": "07:25 Scherzo da Capo Roars In"
+              "sec": 622.0,
+              "label": "10:22 谐谑曲重现爆发",
+              "label_en": "10:22 Scherzo da Capo Erupts [Bar 1]"
             },
             {
-              "sec": 510.0,
-              "label": "08:30 终曲狂暴全奏冲刺",
-              "label_en": "08:30 Wild Final Sprint"
+              "sec": 750.0,
+              "label": "12:30 木管欢谑复现",
+              "label_en": "12:30 Woodwind Playfulness Returns"
             },
             {
-              "sec": 555.0,
-              "label": "09:15 乐章震天落幕",
-              "label_en": "09:15 Movement Final Cadence"
+              "sec": 870.0,
+              "label": "14:30 终曲狂暴全奏冲刺",
+              "label_en": "14:30 Furious Full-Orchestra Final Sprint"
+            },
+            {
+              "sec": 929.0,
+              "label": "15:29 乐章震天落幕",
+              "label_en": "15:29 Thunderous Movement Close"
             }
           ]
         }
@@ -4547,7 +4582,7 @@ window.BRUCKNER_DATA = {
       "originalTitle": "Adagio: Feierlich langsam, doch nicht schleppend",
       "subtitle": "4/4拍 · 降D大调 · 五部双主题变奏交替体 · 钹与三把竖琴的银河顶点",
       "tonalCenter": "D-flat major (降D大调)",
-      "duration": 1696,
+      "duration": 1702,
       "form": "宏伟五部双主题交替变奏体（A1 - B1 - A2 - B2 - A3巨型梯级高潮 - 升华尾声）",
       "form_en": "Grand Five-Part Alternating Variation Form (A1 - B1 - A2 - B2 - A3 Climax - Transfigured Coda)",
       "mission": "静心沉浸在降D大调的永恒光辉中：追踪弦乐切分叹息、瓦格纳大号庄严圣咏，以及哈斯版高潮处三记钹鸣与竖琴掀起的宇宙巨浪！",
@@ -4671,12 +4706,12 @@ window.BRUCKNER_DATA = {
             {
               "sec": 0.0,
               "label": "00:00 晨光初现，弦乐切分叹息",
-              "label_en": "00:00 Dawn Breaks, Syncopated Sigh"
+              "label_en": "00:00 Dawn Glow: Muted Syncopated String Sighs [Bar 1]"
             },
             {
               "sec": 45.0,
               "label": "00:45 旋律跃入高八度天际",
-              "label_en": "00:45 Melody Leaps to High Octave"
+              "label_en": "00:45 Melody Soars to Upper Octave"
             }
           ],
           "insights": [
@@ -4701,7 +4736,7 @@ window.BRUCKNER_DATA = {
         },
         {
           "id": "m3-s02",
-          "start": 82,
+          "start": 75,
           "act": 1,
           "actName": "呈示部：第一主题群（渴望与叹息）",
           "actName_en": "Exposition: Theme 1 Group",
@@ -4759,20 +4794,20 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 82.0,
-              "label": "01:22 竖琴水滴琶音进入",
-              "label_en": "01:22 Harps Enter with Droplet Arpeggios"
+              "sec": 75.0,
+              "label": "01:15 竖琴水滴琶音进入",
+              "label_en": "01:15 Harp Drops & Rippling Arpeggios [Bar 19]"
             },
             {
-              "sec": 115.0,
-              "label": "01:55 长笛高音悠扬长叹",
-              "label_en": "01:55 Flute Serene Sigh"
+              "sec": 105.0,
+              "label": "01:45 长笛高音悠扬长叹",
+              "label_en": "01:45 High Flute Meditative Sigh"
             }
           ]
         },
         {
           "id": "m3-s03",
-          "start": 145,
+          "start": 155,
           "act": 2,
           "actName": "呈示部：第二主题群（大教堂圣咏）",
           "actName_en": "Exposition: Theme 2 (Cathedral Chorale)",
@@ -4830,14 +4865,14 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 145.0,
-              "label": "02:25 瓦格纳大号庄严进场",
-              "label_en": "02:25 Wagner Tubas Solemn Entrance"
+              "sec": 155.0,
+              "label": "02:35 瓦格纳大号庄严进场",
+              "label_en": "02:35 Wagner Tubas Solemn Entry [Bar 29]"
             },
             {
-              "sec": 195.0,
-              "label": "03:15 四部和声圣咏展开",
-              "label_en": "03:15 Four-Part Chorale Expands"
+              "sec": 235.0,
+              "label": "03:55 四部和声圣咏巅峰",
+              "label_en": "03:55 Peak of Four-Part Chorale"
             }
           ],
           "insights": [
@@ -4862,7 +4897,7 @@ window.BRUCKNER_DATA = {
         },
         {
           "id": "m3-s04",
-          "start": 255,
+          "start": 265,
           "act": 2,
           "actName": "呈示部：第二主题群（大教堂圣咏）",
           "actName_en": "Exposition: Theme 2 Group",
@@ -4921,20 +4956,20 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 255.0,
-              "label": "04:15 大提琴长歌升起",
-              "label_en": "04:15 Cellos Cantilena Ascends"
+              "sec": 265.0,
+              "label": "04:25 大提琴长歌升起",
+              "label_en": "04:25 Theme 2 Cantilena Rises in Cellos [Bar 47]"
             },
             {
-              "sec": 290.0,
-              "label": "04:50 大号与木管温暖交融",
-              "label_en": "04:50 Tubas & Woodwinds Melt Together"
+              "sec": 335.0,
+              "label": "05:35 大号与木管温暖交融",
+              "label_en": "05:35 Warm Dialogue with Tubas & Woodwinds"
             }
           ]
         },
         {
           "id": "m3-s05",
-          "start": 328,
+          "start": 445,
           "act": 3,
           "actName": "展开部：主题变形与欲望升温",
           "actName_en": "Development: Metamorphosis & Escalation",
@@ -4992,20 +5027,20 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 328.0,
-              "label": "05:28 展开部长卷启动",
-              "label_en": "05:28 Development Cantilena Launches"
+              "sec": 445.0,
+              "label": "07:25 展开部长卷启动",
+              "label_en": "07:25 First Variation Tapestry Begins [Bar 95]"
             },
             {
-              "sec": 405.0,
-              "label": "06:45 弦乐三连音热烈翻滚",
-              "label_en": "06:45 Strings Undulating Waves"
+              "sec": 510.0,
+              "label": "08:30 弦乐三连音热烈翻滚",
+              "label_en": "08:30 Ardent String Triplet Waves"
             }
           ]
         },
         {
           "id": "m3-s06",
-          "start": 485,
+          "start": 560,
           "act": 3,
           "actName": "展开部：主题变形与欲望升温",
           "actName_en": "Development: Metamorphosis & Escalation",
@@ -5064,20 +5099,25 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 485.0,
-              "label": "08:05 热情巨浪攀登",
-              "label_en": "08:05 Passionate Wave Climbs"
+              "sec": 560.0,
+              "label": "09:20 热情巨浪攀登",
+              "label_en": "09:20 Surging Ocean of Passion [Bar 125]"
             },
             {
-              "sec": 535.0,
-              "label": "08:55 悬崖勒马大休止",
-              "label_en": "08:55 Cliffside Generalpause"
+              "sec": 720.0,
+              "label": "12:00 巨浪冲上云霄",
+              "label_en": "12:00 Triumphant Wave Hits the Clouds"
+            },
+            {
+              "sec": 740.0,
+              "label": "12:20 悬崖勒马大休止",
+              "label_en": "12:20 Sudden Cliff-Hanger Generalpause"
             }
           ]
         },
         {
           "id": "m3-s07",
-          "start": 570,
+          "start": 750,
           "act": 4,
           "actName": "展开部：大梯级启动 (Steigerung)",
           "actName_en": "Development: Titanic Steigerung",
@@ -5135,20 +5175,20 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 570.0,
-              "label": "09:30 调性迷宫启程",
-              "label_en": "09:30 Modulatory Labyrinth"
+              "sec": 750.0,
+              "label": "12:30 调性迷宫启程",
+              "label_en": "12:30 Tonal Labyrinth Variation of Theme 2 [Bar 141]"
             },
             {
-              "sec": 650.0,
-              "label": "10:50 圣光隐隐穿透云层",
-              "label_en": "10:50 Sunlight Breaks Through"
+              "sec": 840.0,
+              "label": "14:00 圣光隐隐穿透云层",
+              "label_en": "14:00 Celestial Light Pierces Through"
             }
           ]
         },
         {
           "id": "m3-s08",
-          "start": 740,
+          "start": 910,
           "act": 4,
           "actName": "展开部：大梯级启动 (Steigerung)",
           "actName_en": "Development: Titanic Steigerung",
@@ -5207,20 +5247,20 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 740.0,
-              "label": "12:20 史诗大梯级第一阶段",
-              "label_en": "12:20 Steigerung Phase 1"
+              "sec": 910.0,
+              "label": "15:10 史诗大梯级第一阶段",
+              "label_en": "15:10 Epic Steigerung Launches: Second Variation [Bar 185]"
             },
             {
-              "sec": 830.0,
-              "label": "13:50 和声抬升半音增压",
-              "label_en": "13:50 Semitone Escalation"
+              "sec": 1020.0,
+              "label": "17:00 和声抬升半音增压",
+              "label_en": "17:00 Chromatic Semitone Compression"
             }
           ]
         },
         {
           "id": "m3-s09",
-          "start": 920,
+          "start": 1100,
           "act": 4,
           "actName": "展开部：大梯级启动 (Steigerung)",
           "actName_en": "Development: Titanic Steigerung",
@@ -5278,20 +5318,20 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 920.0,
-              "label": "15:20 竖琴与重铜管全面压上",
-              "label_en": "15:20 Harps & Heavy Brass Join"
+              "sec": 1100.0,
+              "label": "18:20 竖琴与重铜管全面压上",
+              "label_en": "18:20 Harps & Heavy Brass Fully Deployed [Bar 215]"
             },
             {
-              "sec": 1000.0,
-              "label": "16:40 张力逼近绝对极限",
-              "label_en": "16:40 Tension Reaches Apex"
+              "sec": 1170.0,
+              "label": "19:30 张力逼近绝对极限",
+              "label_en": "19:30 Tension Reaches Absolute Limit"
             }
           ]
         },
         {
           "id": "m3-s10",
-          "start": 1060,
+          "start": 1240,
           "act": 5,
           "actName": "银河顶点：哈斯版神迹爆发",
           "actName_en": "Cosmic Summit: The Haas Miracle",
@@ -5349,20 +5389,20 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 1060.0,
-              "label": "17:40 突破临界大冲刺",
-              "label_en": "17:40 Final Breakthrough Sprint"
+              "sec": 1240.0,
+              "label": "20:40 突破临界大冲刺",
+              "label_en": "20:40 Critical Breakthrough Surge [Bar 239]"
             },
             {
-              "sec": 1115.0,
-              "label": "18:35 天门洞开，银河降临",
-              "label_en": "18:35 Celestial Gates Swing Open"
+              "sec": 1285.0,
+              "label": "21:25 天门洞开，银河降临",
+              "label_en": "21:25 Gates of Heaven Open into Radiant E-flat"
             }
           ]
         },
         {
           "id": "m3-s11",
-          "start": 1150,
+          "start": 1305,
           "act": 5,
           "actName": "银河顶点：哈斯版神迹爆发",
           "actName_en": "Cosmic Summit: The Haas Miracle",
@@ -5420,24 +5460,24 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 1150.0,
-              "label": "19:10 第一记大钹撕裂星空！",
-              "label_en": "19:10 First Cymbal Clash!"
+              "sec": 1306.0,
+              "label": "21:46 第一记大钹撕裂星空！",
+              "label_en": "21:46 Cymbal Strike 1: Shattering the Cosmos! [Haas Bar 243]"
             },
             {
-              "sec": 1168.0,
-              "label": "19:28 第二记大钹连击！",
-              "label_en": "19:28 Second Cymbal Clash!"
+              "sec": 1318.0,
+              "label": "21:58 竖琴金色飞瀑",
+              "label_en": "21:58 Golden Harp Cascades"
             },
             {
-              "sec": 1188.0,
-              "label": "19:48 第三记大钹终极升华！",
-              "label_en": "19:48 Third Cymbal Clash!"
+              "sec": 1326.0,
+              "label": "22:06 第二记大钹连击终极升华！",
+              "label_en": "22:06 Cymbal Strike 2: Transcendent Climax! [Haas Bar 247]"
             },
             {
-              "sec": 1215.0,
-              "label": "20:15 竖琴飞瀑余音滚滚",
-              "label_en": "20:15 Harp Cascades Reverberating"
+              "sec": 1345.0,
+              "label": "22:25 余音在穹顶滚滚回响",
+              "label_en": "22:25 Vast Reverberation Rolling in Cathedral"
             }
           ],
           "insights": [
@@ -5464,7 +5504,7 @@ window.BRUCKNER_DATA = {
         },
         {
           "id": "m3-s12",
-          "start": 1260,
+          "start": 1365,
           "act": 6,
           "actName": "尾声：瓦格纳悼歌与星空消融",
           "actName_en": "Coda: Wagner Funeral Ode & Stellar Dissolution",
@@ -5522,20 +5562,20 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 1260.0,
-              "label": "21:00 圣光缓缓退潮",
-              "label_en": "21:00 Radiant Light Softens"
+              "sec": 1365.0,
+              "label": "22:45 圣光缓缓退潮",
+              "label_en": "22:45 Radiant Light Recedes into Serene Peace [Bar 259]"
             },
             {
-              "sec": 1320.0,
-              "label": "22:00 弦乐长歌重回崇高安宁",
-              "label_en": "22:00 Strings Serene Peace"
+              "sec": 1410.0,
+              "label": "23:30 弦乐长歌重回崇高安宁",
+              "label_en": "23:30 String Polyphony Restores Sublime Peace"
             }
           ]
         },
         {
           "id": "m3-s13",
-          "start": 1380,
+          "start": 1450,
           "act": 6,
           "actName": "尾声：瓦格纳悼歌与星空消融",
           "actName_en": "Coda: Wagner Funeral Ode & Stellar Dissolution",
@@ -5593,14 +5633,14 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 1380.0,
-              "label": "23:00 瓦格纳悼歌响起",
-              "label_en": "23:00 Wagner Funeral Ode Begins"
+              "sec": 1450.0,
+              "label": "24:10 瓦格纳悼歌响起",
+              "label_en": "24:10 Wagner's Tomb: Solemn Funeral Elegy [Bar 271]"
             },
             {
-              "sec": 1445.0,
-              "label": "24:05 大号与圆号交替告别",
-              "label_en": "24:05 Alternating Farewell Calls"
+              "sec": 1510.0,
+              "label": "25:10 大号与圆号交替告别",
+              "label_en": "25:10 Farewell Dialogues of Tubas and Horns"
             }
           ],
           "insights": [
@@ -5625,7 +5665,7 @@ window.BRUCKNER_DATA = {
         },
         {
           "id": "m3-s14",
-          "start": 1510,
+          "start": 1560,
           "act": 6,
           "actName": "尾声：瓦格纳悼歌与星空消融",
           "actName_en": "Coda: Wagner Funeral Ode & Stellar Dissolution",
@@ -5683,19 +5723,19 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 1510.0,
-              "label": "25:10 弦乐长音消融启程",
-              "label_en": "25:10 Strings Dissolution Begins"
+              "sec": 1560.0,
+              "label": "26:00 弦乐长音消融启程",
+              "label_en": "26:00 Sustained Strings Dissolve in Twilight [Bar 283]"
             },
             {
-              "sec": 1600.0,
-              "label": "26:40 圆号最后一声叹息",
-              "label_en": "26:40 Horn Final Solitary Sigh"
+              "sec": 1620.0,
+              "label": "27:00 圆号最后一声叹息",
+              "label_en": "27:00 Distant Horn's Final Farewell"
             },
             {
-              "sec": 1675.0,
-              "label": "27:55 完全融入永恒沉寂",
-              "label_en": "27:55 Complete Immersion in Eternity"
+              "sec": 1680.0,
+              "label": "28:00 完全融入永恒沉寂",
+              "label_en": "28:00 Merging into Eternal Stillness"
             }
           ]
         }
@@ -7017,7 +7057,7 @@ window.BRUCKNER_DATA = {
       "originalTitle": "Finale: Feierlich, nicht schnell",
       "subtitle": "2/2拍 · C小调 / C大调 · 史诗奏鸣曲式 · 西方音乐史上最伟大的四重对位尾声",
       "tonalCenter": "C minor leading to blazing C major",
-      "duration": 1321,
+      "duration": 1423,
       "form": "史诗宏观奏鸣曲式（三主题复合群、复调赋格展开部与四重对位终局尾声）",
       "form_en": "Epic Macro-Sonata Form (Three thematic complexes, fugal development, and quadruple counterpoint Coda)",
       "mission": "全程锁定三大主题并在终局见证奇迹：骑兵冲锋、管风琴圣咏与英雄行进，并在最后三分钟听出四个乐章主题在不同乐器里同时开火的四重对位！",
@@ -7141,12 +7181,17 @@ window.BRUCKNER_DATA = {
             {
               "sec": 0.0,
               "label": "00:00 战马铁蹄急骤狂奔",
-              "label_en": "00:00 Cavalry Gallop Launches"
+              "label_en": "00:00 Galloping Cossack Cavalry Ride [Bar 1]"
             },
             {
               "sec": 12.0,
               "label": "00:12 铜管冲锋号角呼啸",
-              "label_en": "00:12 Brass Fanfare Roars"
+              "label_en": "00:12 Brass Fanfares Roar"
+            },
+            {
+              "sec": 44.0,
+              "label": "00:44 冲锋风暴第一波爆发",
+              "label_en": "00:44 First Tremendous Wave of the Charge"
             }
           ],
           "insights": [
@@ -7171,7 +7216,7 @@ window.BRUCKNER_DATA = {
         },
         {
           "id": "m4-s02",
-          "start": 65,
+          "start": 50,
           "act": 1,
           "actName": "呈示部：第一主题群（帝国骑兵）",
           "actName_en": "Exposition: Theme 1 (Imperial Cavalry)",
@@ -7229,20 +7274,20 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 65.0,
-              "label": "01:05 全军突击全奏爆发",
-              "label_en": "01:05 All-Out Assault Detonation"
+              "sec": 50.0,
+              "label": "00:50 全军突击全奏爆发",
+              "label_en": "00:50 All-Out Assault fff Blast [Bar 33]"
             },
             {
-              "sec": 95.0,
-              "label": "01:35 战火骤收，转向圣坛",
-              "label_en": "01:35 Battle Pauses, Turns to Altar"
+              "sec": 78.0,
+              "label": "01:18 战火骤收，转向圣坛",
+              "label_en": "01:18 Battlefield Sudden Quiet: Turning to Altar"
             }
           ]
         },
         {
           "id": "m4-s03",
-          "start": 110,
+          "start": 92,
           "act": 2,
           "actName": "呈示部：第二主题群（圣咏与跳跃长笛）",
           "actName_en": "Exposition: Theme 2 (Chorale & Flute)",
@@ -7300,14 +7345,14 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 110.0,
-              "label": "01:50 管风琴圣咏与长笛进场",
-              "label_en": "01:50 Organ Chorale & Flute Enter"
+              "sec": 92.0,
+              "label": "01:32 管风琴圣咏与长笛进场",
+              "label_en": "01:32 Organ Chorale & Skipping Flute [Bar 69]"
             },
             {
-              "sec": 150.0,
-              "label": "02:30 长笛灵动起舞展开",
-              "label_en": "02:30 Flute Dance Expands"
+              "sec": 135.0,
+              "label": "02:15 长笛灵动起舞展开",
+              "label_en": "02:15 Flute Variations Expand"
             }
           ],
           "insights": [
@@ -7332,7 +7377,7 @@ window.BRUCKNER_DATA = {
         },
         {
           "id": "m4-s04",
-          "start": 182,
+          "start": 145,
           "act": 2,
           "actName": "呈示部：第二主题群（圣咏与跳跃长笛）",
           "actName_en": "Exposition: Theme 2 Group",
@@ -7390,20 +7435,20 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 182.0,
-              "label": "03:02 大提琴接棒长歌",
-              "label_en": "03:02 Cellos Cantilena Takes Over"
+              "sec": 145.0,
+              "label": "02:25 大提琴接棒长歌",
+              "label_en": "02:25 Cellos Inherit the Song [Bar 101]"
             },
             {
-              "sec": 215.0,
-              "label": "03:35 木管对位绚丽展开",
-              "label_en": "03:35 Woodwinds Counterpoint Flourishes"
+              "sec": 175.0,
+              "label": "02:55 木管对位绚丽展开",
+              "label_en": "02:55 Splendid Woodwind Counterpoint"
             }
           ]
         },
         {
           "id": "m4-s05",
-          "start": 240,
+          "start": 196,
           "act": 3,
           "actName": "呈示部：第三主题群（花岗岩英雄行进）",
           "actName_en": "Exposition: Theme 3 (Heroic Granite March)",
@@ -7461,20 +7506,25 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 240.0,
-              "label": "04:00 花岗岩进行曲启程",
-              "label_en": "04:00 Granite March Launches"
+              "sec": 196.0,
+              "label": "03:16 花岗岩进行曲启程",
+              "label_en": "03:16 Granite March Launches [Bar 135]"
             },
             {
-              "sec": 280.0,
-              "label": "04:40 铜管英雄圣咏爆发",
-              "label_en": "04:40 Brass Heroic Chorale"
+              "sec": 255.0,
+              "label": "04:15 步伐稳步增压",
+              "label_en": "04:15 March Steigerung Escalation"
+            },
+            {
+              "sec": 324.0,
+              "label": "05:24 铜管英雄圣咏爆发",
+              "label_en": "05:24 Heroic Brass Chorale Summit"
             }
           ]
         },
         {
           "id": "m4-s06",
-          "start": 320,
+          "start": 345,
           "act": 3,
           "actName": "呈示部：第三主题群（花岗岩英雄行进）",
           "actName_en": "Exposition: Theme 3 Group",
@@ -7532,20 +7582,20 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 320.0,
-              "label": "05:20 第一乐章2+3暗影重现",
-              "label_en": "05:20 Mvt 1 (2+3) Shadow Returns"
+              "sec": 345.0,
+              "label": "05:45 第一乐章2+3暗影重现",
+              "label_en": "05:45 Theme 1 (2+3) Dark Shadow Re-Emerges [Bar 193]"
             },
             {
-              "sec": 355.0,
-              "label": "05:55 幽暗悬疑，进入展开部",
-              "label_en": "05:55 Suspense Enters Development"
+              "sec": 360.0,
+              "label": "06:00 幽暗悬疑，进入展开部",
+              "label_en": "06:00 Dark Suspense Before Development"
             }
           ]
         },
         {
           "id": "m4-s07",
-          "start": 385,
+          "start": 365,
           "act": 4,
           "actName": "展开部：对位狂潮与哈斯版神来之笔",
           "actName_en": "Development: Contrapuntal Tempest",
@@ -7603,20 +7653,20 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 385.0,
-              "label": "06:25 展开部骑兵赋格全面启动",
-              "label_en": "06:25 Cavalry Fugato Launches"
+              "sec": 365.0,
+              "label": "06:05 展开部骑兵赋格全面启动",
+              "label_en": "06:05 Development Cavalry Fugato Ignites [Bar 211]"
             },
             {
-              "sec": 425.0,
-              "label": "07:05 声部紧缩追逐白热化",
-              "label_en": "07:05 Stretto Contrapuntal Climax"
+              "sec": 410.0,
+              "label": "06:50 声部紧缩追逐白热化",
+              "label_en": "06:50 Furious Stretto Pursuits"
             }
           ]
         },
         {
           "id": "m4-s08",
-          "start": 465,
+          "start": 535,
           "act": 4,
           "actName": "展开部：对位狂潮与哈斯版神来之笔",
           "actName_en": "Development: Contrapuntal Tempest",
@@ -7674,14 +7724,14 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 465.0,
-              "label": "07:45 哈斯版恢复圣咏静谧段",
-              "label_en": "07:45 Haas Restored Quiet Oasis"
+              "sec": 535.0,
+              "label": "08:55 哈斯版恢复圣咏静谧段",
+              "label_en": "08:55 The Haas Restoration: Quiet Chorale Reverie [Bar 253]"
             },
             {
-              "sec": 515.0,
-              "label": "08:35 单簧管与圆号冥思道别",
-              "label_en": "08:35 Clarinet & Horn Twilight Farewell"
+              "sec": 575.0,
+              "label": "09:35 单簧管与圆号冥思道别",
+              "label_en": "09:35 Contemplative Dialogue of Clarinet and Horns"
             }
           ],
           "insights": [
@@ -7706,7 +7756,7 @@ window.BRUCKNER_DATA = {
         },
         {
           "id": "m4-s09",
-          "start": 560,
+          "start": 610,
           "act": 5,
           "actName": "展开部巅峰与再现部凯旋",
           "actName_en": "Development Climax & Recapitulation",
@@ -7765,20 +7815,20 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 560.0,
-              "label": "09:20 地壳梯级大累积启动",
-              "label_en": "09:20 Tectonic Steigerung Launches"
+              "sec": 610.0,
+              "label": "10:10 地壳梯级大累积启动",
+              "label_en": "10:10 Tectonic Steigerung Accumulates [Bar 387]"
             },
             {
-              "sec": 620.0,
-              "label": "10:20 全乐团张力逼近临界点",
-              "label_en": "10:20 Tension Nears Boiling Point"
+              "sec": 675.0,
+              "label": "11:15 全乐团张力逼近临界点",
+              "label_en": "11:15 Orchestral Pressure Nears Boiling Point"
             }
           ]
         },
         {
           "id": "m4-s10",
-          "start": 670,
+          "start": 705,
           "act": 5,
           "actName": "展开部巅峰与再现部凯旋",
           "actName_en": "Development Climax & Recapitulation",
@@ -7836,20 +7886,20 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 670.0,
-              "label": "11:10 展开部ffff毁灭性大爆发",
-              "label_en": "11:10 fff Development Cataclysm"
+              "sec": 708.0,
+              "label": "11:48 展开部ffff毁灭性大爆发",
+              "label_en": "11:48 Apocalyptic ffff Blast of Development [Bar 447]"
             },
             {
-              "sec": 715.0,
-              "label": "11:55 风暴直撞入再现部",
-              "label_en": "11:55 Storm Collides into Recapitulation"
+              "sec": 740.0,
+              "label": "12:20 风暴直撞入再现部",
+              "label_en": "12:20 Hurricane Crashes into Recapitulation"
             }
           ]
         },
         {
           "id": "m4-s11",
-          "start": 745,
+          "start": 760,
           "act": 6,
           "actName": "再现部：凯旋与加冕",
           "actName_en": "Recapitulation: Triumph & Coronation",
@@ -7907,20 +7957,25 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 745.0,
-              "label": "12:25 再现部凯旋回归",
-              "label_en": "12:25 Recapitulation Triumphal Return"
+              "sec": 760.0,
+              "label": "12:40 再现部凯旋回归",
+              "label_en": "12:40 Recapitulation: Cavalry Returns Triumphant [Bar 485]"
             },
             {
-              "sec": 785.0,
-              "label": "13:05 坚毅号角长鸣",
-              "label_en": "13:05 Resolute Fanfare Resounds"
+              "sec": 820.0,
+              "label": "13:40 坚毅号角长鸣",
+              "label_en": "13:40 Resolute Fanfares"
+            },
+            {
+              "sec": 890.0,
+              "label": "14:50 铜管狂潮爆棚",
+              "label_en": "14:50 Blazing Brass Climax"
             }
           ]
         },
         {
           "id": "m4-s12",
-          "start": 820,
+          "start": 930,
           "act": 6,
           "actName": "再现部：凯旋与加冕",
           "actName_en": "Recapitulation: Triumph & Coronation",
@@ -7978,20 +8033,20 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 820.0,
-              "label": "13:40 圣咏与雀跃长笛辉煌重现",
-              "label_en": "13:40 Luminous Chorale & Flute Return"
+              "sec": 930.0,
+              "label": "15:30 圣咏与雀跃长笛辉煌重现",
+              "label_en": "15:30 Luminous Chorale & Dancing Flute Recap [Bar 547]"
             },
             {
-              "sec": 870.0,
-              "label": "14:30 弦乐长卷金色加冕",
-              "label_en": "14:30 Strings Golden Coronation"
+              "sec": 975.0,
+              "label": "16:15 弦乐长卷金色加冕",
+              "label_en": "16:15 Golden String Coronation"
             }
           ]
         },
         {
           "id": "m4-s13",
-          "start": 915,
+          "start": 995,
           "act": 6,
           "actName": "再现部：凯旋与加冕",
           "actName_en": "Recapitulation: Triumph & Coronation",
@@ -8049,20 +8104,25 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 915.0,
-              "label": "15:15 英雄进行曲最后誓师",
-              "label_en": "15:15 Heroic March Final Rally"
+              "sec": 995.0,
+              "label": "16:35 英雄进行曲最后誓师",
+              "label_en": "16:35 Heroic March Final Muster [Bar 583]"
             },
             {
-              "sec": 965.0,
-              "label": "16:05 全团力量汇聚通往尾声",
-              "label_en": "16:05 Forces Converging Toward Coda"
+              "sec": 1055.0,
+              "label": "17:35 全团力量汇聚通往尾声",
+              "label_en": "17:35 Forces Gather Toward the Coda"
+            },
+            {
+              "sec": 1100.0,
+              "label": "18:20 尾声前夕雷霆裂变",
+              "label_en": "18:20 Pre-Coda Thunderous Detonation"
             }
           ]
         },
         {
           "id": "m4-s14",
-          "start": 1005,
+          "start": 1125,
           "act": 7,
           "actName": "终极尾声：四重对位神迹！",
           "actName_en": "Ultimate Coda: Quadruple Counterpoint!",
@@ -8120,20 +8180,20 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 1005.0,
-              "label": "16:45 尾声启程：深渊踱步",
-              "label_en": "16:45 Coda Begins: Abyssal Tread"
+              "sec": 1125.0,
+              "label": "18:45 尾声启程：深渊踱步",
+              "label_en": "18:45 Coda Begins: Abyss Tread in Double Basses [Bar 647]"
             },
             {
-              "sec": 1060.0,
-              "label": "17:40 地心能量暗流涌动",
-              "label_en": "17:40 Subterranean Energy Surges"
+              "sec": 1168.0,
+              "label": "19:28 地心能量暗流涌动",
+              "label_en": "19:28 Subterranean Energy Rumbles"
             }
           ]
         },
         {
           "id": "m4-s15",
-          "start": 1110,
+          "start": 1205,
           "act": 7,
           "actName": "终极尾声：四重对位神迹！",
           "actName_en": "Ultimate Coda: Quadruple Counterpoint!",
@@ -8192,20 +8252,20 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 1110.0,
-              "label": "18:30 破晓冲锋启动",
-              "label_en": "18:30 Dawn Charge Launches"
+              "sec": 1205.0,
+              "label": "20:05 破晓冲锋启动",
+              "label_en": "20:05 The Charge Toward Dawn Commences [Bar 671]"
             },
             {
-              "sec": 1180.0,
-              "label": "19:40 全乐团力量达到临界沸点",
-              "label_en": "19:40 Forces Reach Boiling Point"
+              "sec": 1240.0,
+              "label": "20:40 C大调金色破晓！",
+              "label_en": "20:40 Golden Dawn Breaks in C Major!"
             }
           ]
         },
         {
           "id": "m4-s16",
-          "start": 1240,
+          "start": 1260,
           "act": 7,
           "actName": "终极尾声：四重对位神迹！",
           "actName_en": "Ultimate Coda: Quadruple Counterpoint!",
@@ -8263,20 +8323,20 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 1240.0,
-              "label": "20:40 C大调金光普照！",
-              "label_en": "20:40 C Major Radiance Explodes!"
+              "sec": 1260.0,
+              "label": "21:00 圣山静默，主题回眸",
+              "label_en": "21:00 Holy Mountain Silence: Retrospect of Themes [Bar 695]"
             },
             {
-              "sec": 1310.0,
-              "label": "21:50 四大主题集结待命",
-              "label_en": "21:50 Four Themes Assembled"
+              "sec": 1324.0,
+              "label": "22:04 四大主题集结待命",
+              "label_en": "22:04 Four Movement Themes Assembling for Miracle"
             }
           ]
         },
         {
           "id": "m4-s17",
-          "start": 1380,
+          "start": 1350,
           "act": 7,
           "actName": "终极尾声：四重对位神迹！",
           "actName_en": "Ultimate Coda: Quadruple Counterpoint!",
@@ -8334,19 +8394,19 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 1380.0,
-              "label": "23:00 🔥 四重对位最高神迹爆发！",
-              "label_en": "23:00 🔥 Quadruple Counterpoint Miracle Detonates!"
+              "sec": 1350.0,
+              "label": "22:30 🔥 四重对位最高神迹爆发！",
+              "label_en": "22:30 🔥 The Quadruple Counterpoint Miracle Detonates! [Bar 709]"
             },
             {
-              "sec": 1415.0,
-              "label": "23:35 小号(M1)与长号(M3)激烈并置",
-              "label_en": "23:35 Trumpets (M1) & Trombones (M3) Intertwine"
+              "sec": 1368.0,
+              "label": "22:48 小号(M1)与长号(M3)激烈并置",
+              "label_en": "22:48 Trumpets (M1) and Trombones (M3) Intertwine"
             },
             {
-              "sec": 1450.0,
-              "label": "24:10 圆号(M2)与低音(M4)交相辉映",
-              "label_en": "24:10 Horns (M2) & Basses (M4) Resound"
+              "sec": 1385.0,
+              "label": "23:05 圆号(M2)与低音(M4)交相辉映",
+              "label_en": "23:05 Horns (M2) and Tubas/Basses (M4) Blaze Together"
             }
           ],
           "insights": [
@@ -8371,7 +8431,7 @@ window.BRUCKNER_DATA = {
         },
         {
           "id": "m4-s18",
-          "start": 1490,
+          "start": 1395,
           "act": 7,
           "actName": "终极尾声：四重对位神迹！",
           "actName_en": "Ultimate Coda: Quadruple Counterpoint!",
@@ -8429,14 +8489,19 @@ window.BRUCKNER_DATA = {
           },
           "cues": [
             {
-              "sec": 1490.0,
-              "label": "24:50 终极凯旋和弦轰鸣",
-              "label_en": "24:50 Eternal Victory Chords Thunder"
+              "sec": 1395.0,
+              "label": "23:15 终极凯旋和弦轰鸣！",
+              "label_en": "23:15 Final Blinding C Major Cadence! [Bar 736]"
             },
             {
-              "sec": 1530.0,
-              "label": "25:30 震天巨响终曲落幕",
-              "label_en": "25:30 Titanic Final Closure"
+              "sec": 1405.0,
+              "label": "23:25 震天巨响终曲落幕",
+              "label_en": "23:25 Monumental Final Chord Releases"
+            },
+            {
+              "sec": 1418.0,
+              "label": "23:38 大教堂神圣余音融入静穆",
+              "label_en": "23:38 Cathedral Reverb Sublimates into Holy Silence"
             }
           ]
         }
@@ -10867,7 +10932,7 @@ window.BRUCKNER_DATA = {
     "version": "2.0.0",
     "author": "MelonWater0421",
     "curator": "Antigravity Musicology Pair Programmer",
-    "referenceTiming": "Günter Wand (Haas Edition): M1 ~16:50, M2 ~14:20, M3 ~26:45, M4 ~25:35, Total ~83:30"
+    "referenceTiming": "Günter Wand (NDR Sinfonieorchester · Lübeck 1987 · Haas Edition): M1 16:44 (1004s), M2 15:35 (935s), M3 28:22 (1702s), M4 23:43 (1423s), Total 84:24"
   }
 };
 window.MAHLER_DATA = window.BRUCKNER_DATA; // Fallback compatibility handle
