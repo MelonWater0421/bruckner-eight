@@ -120,7 +120,7 @@ window.BRUCKNER_DATA = {
           "role": "整部交响曲的原生种子。在第四乐章尾声中，它将作为四重对位最顶层的号角重新登场。",
           "role_en": "The elemental genetic seed of the entire work, destined to crown the quadruple counterpoint in the Finale's Coda.",
           "color": "#ef4444",
-          "audioStart": 0
+          "audioStart": 0.0
         },
         {
           "id": "m1-gesang",
@@ -133,7 +133,7 @@ window.BRUCKNER_DATA = {
           "role": "奏鸣曲式的第二主题群，提供广袤崇高的抒情庇护所，展现布鲁克纳复调织体的透光美感。",
           "role_en": "The lyrical sanctuary of the second subject group, demonstrating Bruckner's luminous polyphonic transparency.",
           "color": "#f59e0b",
-          "audioStart": 138
+          "audioStart": 118.0
         },
         {
           "id": "m1-steigerung",
@@ -146,7 +146,7 @@ window.BRUCKNER_DATA = {
           "role": "第三主题群与动力引擎；通过层层模进将织体推向山岳般的三重强音高潮。",
           "role_en": "Third thematic group and dramatic propellant; drives stratified waves into titanic fff summits.",
           "color": "#3b82f6",
-          "audioStart": 248
+          "audioStart": 237.0
         },
         {
           "id": "m1-todesuhr",
@@ -159,7 +159,7 @@ window.BRUCKNER_DATA = {
           "role": "第一乐章悲剧性的终点。1890年版布鲁克纳在此彻底摒弃了常规的强音收尾，开创了走向寂灭的现代性先河。",
           "role_en": "The desolate terminus of Movement 1. In 1890 Bruckner discarded all conventional loud codas, allowing the music to dissolve into the abyss.",
           "color": "#8b5cf6",
-          "audioStart": 930
+          "audioStart": 935.0
         }
       ],
       "stages": [
@@ -495,7 +495,7 @@ window.BRUCKNER_DATA = {
                 {
                   "label": "听原声歌唱期",
                   "label_en": "Hear Gesangsperiode in audio",
-                  "time": 138.0
+                  "time": 118.0
                 }
               ]
             }
@@ -1024,7 +1024,7 @@ window.BRUCKNER_DATA = {
                 {
                   "label": "直达末日顶点",
                   "label_en": "Jump to Cataclysm",
-                  "time": 570.0
+                  "time": 553.0
                 }
               ]
             }
@@ -1415,7 +1415,7 @@ window.BRUCKNER_DATA = {
                 {
                   "label": "直达死亡时钟",
                   "label_en": "Jump to Death Clock",
-                  "time": 930.0
+                  "time": 935.0
                 }
               ]
             }
@@ -2640,7 +2640,7 @@ window.BRUCKNER_DATA = {
           "role": "谐谑曲的肌肉发动机。纯朴、顽强、不可撼动的乡野原力。",
           "role_en": "The unyielding motoric engine of the Scherzo; earthy, naive folk power.",
           "color": "#eab308",
-          "audioStart": 0
+          "audioStart": 0.0
         },
         {
           "id": "m2-tremolo",
@@ -2653,7 +2653,7 @@ window.BRUCKNER_DATA = {
           "role": "将重踏节奏与空中旋风咬合在一起，为沉重的舞步注入飞翔的动能。",
           "role_en": "Interlocks with the heavy bass footsteps, imparting aerodynamic velocity to the rustic dance.",
           "color": "#06b6d4",
-          "audioStart": 22
+          "audioStart": 18.0
         },
         {
           "id": "m2-harp-prayer",
@@ -2666,7 +2666,7 @@ window.BRUCKNER_DATA = {
           "role": "整部交响曲音色调色盘的破晓之作；预示了第三乐章慢板的至高天国境界。",
           "role_en": "The dawn of a new orchestral timbre, heralding the celestial heights of the Adagio.",
           "color": "#10b981",
-          "audioStart": 348
+          "audioStart": 330.0
         }
       ],
       "stages": [
@@ -3147,7 +3147,7 @@ window.BRUCKNER_DATA = {
                 {
                   "label": "直达竖琴破晓时刻",
                   "label_en": "Jump to Harps Debut",
-                  "time": 268.0
+                  "time": 402.0
                 }
               ]
             }
@@ -4601,7 +4601,7 @@ window.BRUCKNER_DATA = {
           "role": "慢板的核心灵魂。展现人对神性救赎最纯粹的渴望与叹息。",
           "role_en": "The spiritual core of the Adagio, embodying humanity's deepest yearning for divine solace.",
           "color": "#38bdf8",
-          "audioStart": 0
+          "audioStart": 0.0
         },
         {
           "id": "m3-tuben-chorale",
@@ -4614,7 +4614,7 @@ window.BRUCKNER_DATA = {
           "role": "圣弗洛里安修道院大教堂的声音具象化；神圣安详的避风港。",
           "role_en": "The sonic incarnation of St. Florian Abbey; an immovable sanctuary of sacred peace.",
           "color": "#a855f7",
-          "audioStart": 145
+          "audioStart": 155.0
         },
         {
           "id": "m3-cymbal-peak",
@@ -4627,7 +4627,7 @@ window.BRUCKNER_DATA = {
           "role": "哈斯版慢板最负盛名的神性高潮；全曲精神世界被圣光彻底洗礼的瞬间。",
           "role_en": "The supreme spiritual crest of the Haas edition, where the soul is engulfed in blinding celestial light.",
           "color": "#fbbf24",
-          "audioStart": 1150
+          "audioStart": 1306.0
         },
         {
           "id": "m3-coda-peace",
@@ -4640,7 +4640,7 @@ window.BRUCKNER_DATA = {
           "role": "布鲁克纳向恩师瓦格纳致敬的崇高告别，也是通往终曲风暴前的终极澄净。",
           "role_en": "Bruckner's profound farewell to Wagner, attaining transcendent peace before the Finale's storm.",
           "color": "#22d3ee",
-          "audioStart": 1420
+          "audioStart": 1450.0
         }
       ],
       "stages": [
@@ -4889,7 +4889,7 @@ window.BRUCKNER_DATA = {
                 {
                   "label": "听大号圣咏",
                   "label_en": "Hear Tuba Chorale",
-                  "time": 145.0
+                  "time": 155.0
                 }
               ]
             }
@@ -5496,7 +5496,7 @@ window.BRUCKNER_DATA = {
                 {
                   "label": "直达三记大钹顶点",
                   "label_en": "Jump to Cymbal Summit",
-                  "time": 1150.0
+                  "time": 1306.0
                 }
               ]
             }
@@ -5657,7 +5657,7 @@ window.BRUCKNER_DATA = {
                 {
                   "label": "听瓦格纳悼歌",
                   "label_en": "Hear Wagner Funeral Ode",
-                  "time": 1380.0
+                  "time": 1450.0
                 }
               ]
             }
@@ -7076,7 +7076,7 @@ window.BRUCKNER_DATA = {
           "role": "终曲的雷霆破门之槌。带来极具戏剧性与历史纵深感的英雄史诗气魄。",
           "role_en": "The titanic battering ram opening the Finale, unleashing boundless heroic velocity.",
           "color": "#ef4444",
-          "audioStart": 0
+          "audioStart": 0.0
         },
         {
           "id": "m4-organ-chorale",
@@ -7089,7 +7089,7 @@ window.BRUCKNER_DATA = {
           "role": "战争风暴后的神圣避难所；展现布鲁克纳复调配器中最富反差萌的纯真笔触。",
           "role_en": "A sacred sanctuary amidst the tempest, showcasing Bruckner's charming contrapuntal contrast.",
           "color": "#10b981",
-          "audioStart": 110
+          "audioStart": 92.0
         },
         {
           "id": "m4-heroic-march",
@@ -7102,7 +7102,7 @@ window.BRUCKNER_DATA = {
           "role": "第三主题群；连接圣咏与赋格交锋的强力承重墙。",
           "role_en": "Third thematic complex; an immovable structural wall bridging chorale and fugal battle.",
           "color": "#3b82f6",
-          "audioStart": 240
+          "audioStart": 196.0
         },
         {
           "id": "m4-quadruple-coda",
@@ -7115,7 +7115,7 @@ window.BRUCKNER_DATA = {
           "role": "全曲的宇宙终极圆满；人类交响复调艺术的万神殿顶点！",
           "role_en": "The ultimate eschatological synthesis of the symphony; the crowning apex of symphonic counterpoint.",
           "color": "#fbbf24",
-          "audioStart": 1420
+          "audioStart": 1350.0
         }
       ],
       "stages": [
@@ -7369,7 +7369,7 @@ window.BRUCKNER_DATA = {
                 {
                   "label": "听圣咏与雀跃长笛",
                   "label_en": "Hear Chorale & Flute",
-                  "time": 110.0
+                  "time": 92.0
                 }
               ]
             }
@@ -7748,7 +7748,7 @@ window.BRUCKNER_DATA = {
                 {
                   "label": "直达哈斯恢复段",
                   "label_en": "Jump to Restored Oasis",
-                  "time": 465.0
+                  "time": 535.0
                 }
               ]
             }
@@ -8423,7 +8423,7 @@ window.BRUCKNER_DATA = {
                 {
                   "label": "直达四重对位神迹",
                   "label_en": "Jump to Quadruple Counterpoint",
-                  "time": 1380.0
+                  "time": 1350.0
                 }
               ]
             }
@@ -10429,7 +10429,7 @@ window.BRUCKNER_DATA = {
       "name_en": "Organ Chorale & Skipping Flute",
       "bpm": 68.0,
       "totalBeats": 16.0,
-      "realJumpSec": 108.0,
+      "realJumpSec": 92.0,
       "provenance": "Mvt 4 m. 69-92 · Second Theme Group",
       "desc": "纯净超凡的管风琴圣咏。弦乐如虔敬修士轻吟庄严四部和声，独奏长笛在其上方跳跃起舞，将肃穆与童心奇妙融为一体。",
       "desc_en": "Devout organ-like chorale: muted strings intoning serene harmony as a solo flute skips playfully above like an angelic child.",
@@ -10610,7 +10610,7 @@ window.BRUCKNER_DATA = {
       "name_en": "The Miraculous Quadruple Counterpoint Coda",
       "bpm": 88.0,
       "totalBeats": 16.0,
-      "realJumpSec": 1240.0,
+      "realJumpSec": 1350.0,
       "provenance": "Mvt 4 Coda m. 729-760 · Crown of Polyphony",
       "desc": "西方音乐史上最伟大的复调奇迹！四大乐章核心主题在辉煌无匹的C大调光芒中同时轰鸣叠加：小号(第一乐章2+3)、圆号(第二乐章米歇尔)、长号(第三乐章慢板天国圣咏)、低音大号(第四乐章骑兵号角)！点击左侧按键可单独静音或组合聆听！",
       "desc_en": "The summit of western counterpoint: all four movement themes sounding simultaneously in triumphant C major! Mute/unmute tracks to inspect each voice line.",
