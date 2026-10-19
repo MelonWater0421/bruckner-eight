@@ -69,6 +69,8 @@
     const btnFooterSources=$('btnFooterSources');if(btnFooterSources)btnFooterSources.textContent=t('音源与定位说明','Audio Sources & Timing Notes');
     const footerShortcuts=$('footerShortcuts');if(footerShortcuts)footerShortcuts.textContent=t('Space 播放 · ← → 5 秒 · Esc 停止积木试听','Space: Play/Pause · ← →: ±5s · Esc: Stop MIDI');
     const heroGerman=$('heroGerman');if(heroGerman)heroGerman.textContent=movement().originalTitle;
+    const heroSubtitle=$('heroSubtitle');if(heroSubtitle)heroSubtitle.textContent=t(' · 罗伯特·哈斯版 · 声音大教堂 · 复调雷达 · 四重对位',' · Robert Haas Edition · Sonic Cathedral · Polyphony Radar · Quadruple Counterpoint');
+    const introH2=document.querySelector('.chapter-intro h2');if(introH2)introH2.textContent=t('🎼 这一章怎么听？','🎼 How to Listen to This Movement');
   }
 
   function renderMovement(){
@@ -80,7 +82,14 @@
     $('heroLength').textContent=`${source().custom?t('自选音轨','Custom Audio'):'Günter Wand · NDR Sinfonieorchester'} (${fmt(source().duration)})`;
     $('chapterIntro').textContent=tr(m,'introduction')||tr(m,'form');
     $('firstMission').textContent=tr(m,'mission');
-    $('mapCount').textContent=String(m.stages.length);
+    $('mapCount').textContent=state.lang==='en'?`${m.stages.length}-Stage Score Timeline`:`${m.stages.length}`;
+    const tlH2=document.querySelector('.timeline-heading h2');
+    if(tlH2){
+      const ht=`${m.roman}. ${state.lang==='en'?(m.shortEn||tr(m,'title')):tr(m,'title')}`;
+      tlH2.innerHTML=state.lang==='en'
+        ?`🗺️ <span id="heroTitle">${esc(ht)}</span> · <span id="mapCount">${m.stages.length}</span>-Stage Score Timeline`
+        :`🗺️ <span id="heroTitle">${esc(ht)}</span> · <span id="mapCount">${m.stages.length}</span> 节点全景时间轴`;
+    }
     $('prevMovement').disabled=state.index===0;
     $('nextMovement').disabled=state.index===D.movements.length-1;
     $('duration').textContent=fmt(source().duration);
@@ -101,11 +110,11 @@
     return (s.insights||[]).map((note,ni)=>`<aside id="context-${esc(note.id)}" class="context-note" tabindex="-1" aria-label="${esc(tr(note,'title'))}"><h5>${esc(tr(note,'title'))}</h5><p>${esc(tr(note,'body'))}</p>${note.listen?`<p><b>${t('怎么听：','How to listen: ')}</b>${esc(tr(note,'listen'))}</p>`:''}<div class="context-actions">${(note.links||[]).map((link,li)=>`<button data-context-jump="${index},${ni},${li}">🎧 ${esc(tr(link,'label'))}</button>`).join('')}${Number.isInteger(note.synthMode)?`<button data-context-synth="${note.synthMode}">⌨ ${t('查看这段 MIDI','View MIDI Track')}</button>`:''}</div><details><summary>${t('出处与解读','Sources & Context')}</summary>${note.caveat?`<p>${esc(tr(note,'caveat'))}</p>`:''}${(note.sources||[]).map(ref=>`<div class="context-source"><a href="${esc(ref.url)}" target="_blank" rel="noopener noreferrer">${esc(ref.title)} ↗</a>${ref.note?`<br>${esc(ref.note)}`:''}</div>`).join('')}</details></aside>`).join('');
   }
 
-  function choirGroups(m=movement()){
-    return m.radarGroups||[
+  function choirGroups(){
+    return [
       ['strings','🎻',t('弦乐群','Strings')],
       ['winds','🪈',t('木管声部','Woodwinds')],
-      ['horns','📯',t('圆号与大号','Horns & Tubas')],
+      ['horns','📯',t('圆号与瓦格纳大号','Horns & Wagner Tubas')],
       ['brass','🎺',t('重铜管','Heavy Brass')],
       ['perc','🥁',t('竖琴与打击','Harps & Perc')]
     ];
@@ -138,17 +147,23 @@
     updateStageProgress();restoreFocus();
   }
 
+  function currentAudioTime(){
+    if(pendingSeek!==null&&(audio.seeking||audio.readyState<1))return pendingSeek;
+    return audio.currentTime||0;
+  }
+
   function updateStageProgress(){
-    const time=audio.currentTime||0;
+    const time=currentAudioTime();
     stages.forEach((s,i)=>{const end=stages[i+1]?.start??source().duration;const progress=end>s.start?E.clamp((time-s.start)/(end-s.start),0,1):0;$(`stage-${i}`)?.style.setProperty('--stage-progress',`${progress*100}%`);});
   }
 
   function renderNext(){
     const m=movement(),next=D.movements[state.index+1];
-    $('nextCard').innerHTML=next?`<p>${esc(tr(m,'mission')||tr(m,'subtitle'))}</p><button class="primary-small" data-next-card="true">${t('下一乐章 ','Next Movement ')}${next.roman}. ${esc(state.lang==='en'?(next.shortEn||tr(next,'title')):tr(next,'title'))} →</button>`:`<p>${t('全曲结束。回到第四乐章尾声，再次见证人类西方复调音乐最高神迹！','Symphony complete. Return to Movement 4 Coda to marvel at the Quadruple Counterpoint miracle!')}</p><button class="primary-small" data-cross="3,16">↩ ${t('重听终曲四重对位神迹','Relisten to Quadruple Counterpoint')}</button>`;
+    const quadIdx=Math.max(0,D.movements[3].stages.findIndex(s=>s.id===D.movements[3].codaStageId||(s.blocks||[]).includes('m4-quadruple-coda')));
+    $('nextCard').innerHTML=next?`<p>${esc(tr(m,'next')||tr(m,'mission')||tr(m,'subtitle'))}</p><button class="primary-small" data-next-card="true">${t('下一乐章 ','Next Movement ')}${next.roman}. ${esc(state.lang==='en'?(next.shortEn||tr(next,'title')):tr(next,'title'))} →</button>`:`<p>${t('全曲结束。回到第四乐章尾声，再次见证人类西方复调音乐最高神迹！','Symphony complete. Return to Movement 4 Coda to marvel at the Quadruple Counterpoint miracle!')}</p><button class="primary-small" data-cross="3,${quadIdx}">↩ ${t('重听终曲四重对位神迹','Relisten to Quadruple Counterpoint')}</button>`;
   }
 
-  function currentRoleCue(){const s=stages[state.active];return (s?.cues||[]).filter(c=>c.choirs&&mappedTime(c.sec)<=audio.currentTime+.025).at(-1);}
+  function currentRoleCue(){const s=stages[state.active];const curT=currentAudioTime();return (s?.cues||[]).filter(c=>c.choirs&&mappedTime(c.sec)<=curT+.025).at(-1);}
   function roleKey(){return `${state.index}:${state.active}:${currentRoleCue()?.sec??''}`;}
 
   function renderTelemetry(){
@@ -171,7 +186,7 @@
 
   function showScore(index){
     const s=movement().stages[index];if(!s?.score)return;
-    openDialog(`${movement().roman}. ${tr(s,'title')}`,`<p><b>${esc(s.score.label)}</b>${s.score.page?' · '+t('总谱页 ','Score Page ')+esc(s.score.page):''}</p><p>${esc(tr(s.score,'observation')||tr(s,'desc'))}</p><h3>${t('本段各乐器声部配置','Voice Roles in This Section')}</h3>${choirGroups().filter(([key])=>s.choirs?.[key]).map(([key,emoji,name])=>`<p><b>${emoji} ${esc(name)}</b>：${esc(tr(s.choirs[key],'role'))}</p>`).join('')}<p>${esc(s.score.edition||'Robert Haas Edition (1890)')} · ${t('小节号精准定位音乐建筑结构；在旺德棒下复调声部清晰透光。','Bar numbers mark structural milestones; Wand illuminates voice leading with pristine clarity.')}</p><h3>${t('录音位置','Recording Position')}</h3><p>≈ ${fmt(mappedTime(s.start))} · ${t('吕贝克大教堂现场录音；毫秒级对位校核。','Lübeck Cathedral live recording; checked against Haas score.')}</p>`);
+    openDialog(`${movement().roman}. ${tr(s,'title')}`,`<p><b>${esc(s.score.label)}</b>${s.score.page?' · '+t('总谱页 ','Score Page ')+esc(s.score.page):''}</p><p>${esc(tr(s.score,'observation')||tr(s,'desc'))}</p><h3>${t('本段各乐器声部配置','Voice Roles in This Section')}</h3>${choirGroups().filter(([key])=>s.choirs?.[key]).map(([key,emoji,name])=>`<p><b>${emoji} ${esc(name)}</b>：${esc(tr(s.choirs[key],'role'))}</p>`).join('')}<p>${esc(s.score.edition||'Robert Haas Edition (1890)')} · ${t('小节号精准定位音乐建筑结构；在旺德棒下复调声部清晰透光。','Bar numbers mark structural milestones; Wand illuminates voice leading with pristine clarity.')}</p><h3>${t('录音位置','Recording Position')}</h3><p>≈ ${fmt(mappedTime(s.start))} · ${t('由哈斯版总谱 MIDI 与旺德 1987 吕贝克大教堂现场录音进行音高特征色度图（Chroma DTW）对齐校核。','Aligned via Chroma DTW between the Robert Haas score MIDI and Günter Wand\'s 1987 Lübeck Cathedral recording.')}</p>`);
   }
 
   function renderMotifs(){
@@ -218,7 +233,7 @@
     const canvas=$('wave'),box=canvas.getBoundingClientRect();if(!box.width)return;
     const dpr=window.devicePixelRatio||1;canvas.width=Math.floor(box.width*dpr);canvas.height=Math.floor(box.height*dpr);
     const ctx=canvas.getContext('2d');ctx.scale(dpr,dpr);
-    const w=box.width,h=box.height,rms=waves.get(source().key),curT=audio.currentTime||0,duration=source().duration;
+    const w=box.width,h=box.height,rms=waves.get(source().key),curT=currentAudioTime(),duration=source().duration;
     const css=getComputedStyle(document.documentElement),muted=css.getPropertyValue('--faint').trim(),gold=css.getPropertyValue('--gold').trim();
     ctx.clearRect(0,0,w,h);
     if(rms?.length){
@@ -244,7 +259,7 @@
   }
 
   function updateClock(){
-    const curT=audio.currentTime||0;
+    const curT=currentAudioTime();
     $('currentTime').textContent=fmt(curT);
     $('scrub').value=String(curT);
     $('scrub').setAttribute('aria-valuetext',`${fmt(curT)}, / ${fmt(source().duration)}`);
@@ -562,26 +577,16 @@
     else if(input.matches('input[data-continuous-option]')){state.continuous=input.checked;renderToggles();store();}
   });
 
-  $('play').onclick=togglePlay;$('back5').onclick=()=>seek(audio.currentTime-5);$('forward5').onclick=()=>seek(audio.currentTime+5);
+  $('play').onclick=togglePlay;$('back5').onclick=()=>seek(currentAudioTime()-5);$('forward5').onclick=()=>seek(currentAudioTime()+5);
   $('prevMovement').onclick=()=>loadMovement(state.index-1,{autoplay:wantsPlayback()});$('nextMovement').onclick=()=>loadMovement(state.index+1,{autoplay:wantsPlayback()});
   $('startFromBeginning').onclick=()=>{state.loop=null;renderToggles();seek(0,true);};
   $('follow').onclick=()=>{state.follow=!state.follow;state.manualUntil=0;renderToggles();store();if(state.follow)followCurrent();};
   $('continuous').onclick=()=>{state.continuous=!state.continuous;renderToggles();store();};
-  $('loop').onclick=()=>{if(state.loop){state.loop=null;}else if(setLoop({...E.stageBounds(stages,state.active,source().duration),index:state.active})){if(audio.currentTime<state.loop.start||audio.currentTime>=state.loop.end)seek(state.loop.start);}renderToggles();};
+  $('loop').onclick=()=>{if(state.loop){state.loop=null;}else if(setLoop({...E.stageBounds(stages,state.active,source().duration),index:state.active})){const curT=currentAudioTime();if(curT<state.loop.start||curT>=state.loop.end)seek(state.loop.start);}renderToggles();};
   $('themeBtn').onclick=()=>{state.theme=state.theme==='dark'?'light':'dark';renderToggles();drawWave();store();};
   $('speed').onchange=()=>{state.speed=Number($('speed').value);audio.playbackRate=state.speed;store();};
   $('mute').onclick=()=>{audio.muted=!audio.muted;renderToggles();};
-  $('scrub').oninput=()=>{
-    state.loop=null;
-    const val=+$('scrub').value;
-    $('currentTime').textContent=fmt(val);
-    drawWave();
-  };
-  $('scrub').onchange=()=>{
-    state.loop=null;
-    renderToggles();
-    seek(+$('scrub').value,isPlaying());
-  };
+  $('scrub').oninput=()=>{state.loop=null;renderToggles();seek(+$('scrub').value);};
   $('scrub').onpointermove=e=>{const box=$('scrub').getBoundingClientRect(),ratio=E.clamp((e.clientX-box.left)/box.width,0,1);$('waveHover').hidden=false;$('waveHover').textContent=fmt(ratio*source().duration);$('waveHover').style.left=`${Math.min(box.width-45,Math.max(0,ratio*box.width-20))}px`;};
   $('scrub').onpointerleave=()=>$('waveHover').hidden=true;
   $('closeDialog').onclick=closeDialog;
@@ -597,7 +602,7 @@
   });
   audio.addEventListener('ended',ended);audio.addEventListener('play',()=>{stopSynth();updateClock();});audio.addEventListener('pause',()=>{updateClock();store();});audio.addEventListener('error',()=>{pausePlayback();toast(t('音轨未能载入。请检查文件或在「音源与校准」替换音轨。','Audio failed to load. Check file or replace in Settings.'));});audio.addEventListener('waiting',()=>{$('play').title=t('音频缓冲中','Buffering audio');});audio.addEventListener('playing',()=>{$('play').title=t('暂停','Pause');});audio.addEventListener('volumechange',renderToggles);
   window.addEventListener('resize',drawWave);window.addEventListener('wheel',()=>state.manualUntil=performance.now()+10000,{passive:true});window.addEventListener('touchmove',()=>state.manualUntil=performance.now()+10000,{passive:true});window.addEventListener('pagehide',()=>{pausePlayback();stopSynth();store();});
-  window.addEventListener('keydown',event=>{if(event.code==='Escape'){stopSynth();return;}if(event.target.closest('input,select,textarea,button,a,summary')||$('dialog').open)return;if(event.code==='Space'){event.preventDefault();togglePlay();}else if(event.code==='ArrowLeft'){event.preventDefault();seek(audio.currentTime-5);}else if(event.code==='ArrowRight'){event.preventDefault();seek(audio.currentTime+5);}});
+  window.addEventListener('keydown',event=>{if(event.code==='Escape'){stopSynth();return;}if(event.target.closest('input,select,textarea,button,a,summary')||$('dialog').open)return;if(event.code==='Space'){event.preventDefault();togglePlay();}else if(event.code==='ArrowLeft'){event.preventDefault();seek(currentAudioTime()-5);}else if(event.code==='ArrowRight'){event.preventDefault();seek(currentAudioTime()+5);}});
   
   const parseHash=()=>{const q=new URLSearchParams(location.hash.slice(1)),rawTime=Number(q.get('time'));return {index:Math.round(E.clamp((Number(q.get('movement'))||1)-1,0,D.movements.length-1)),time:Number.isFinite(rawTime)?Math.max(0,rawTime):0};};
   window.addEventListener('hashchange',()=>{if(hashBusy||!new URLSearchParams(location.hash.slice(1)).has('movement'))return;const h=parseHash();loadMovement(h.index,{time:h.time,autoplay:false});});
